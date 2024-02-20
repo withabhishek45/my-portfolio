@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+       
+
+        <section id="about1">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate computer engineering student with a keen interest in software engineering and app development. My journey in the world of technology has been an exciting adventure filled with learning and innovation.</p>
+                    <p>Here's a glimpse into my journey:</p>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="timeline-content">
+                                <h3>Currently Pursuing Computer Engineering</h3>
+                                <p>I'm currently enrolled in a computer engineering program, where I'm gaining valuable knowledge and skills in various areas such as programming, algorithms, and computer architecture.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+                            <div class="timeline-content">
+                                <h3>Passion for Software Engineering</h3>
+                                <p>Software engineering is not just my field of study; it's my passion. I love crafting elegant solutions to complex problems and seeing my code come to life.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="timeline-content">
+                                <h3>Aspiring App Developer</h3>
+                                <p>I aspire to become a proficient app developer, creating innovative and user-friendly mobile applications that make a positive impact on people's lives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://img.freepik.com/free-photo/html-css-collage-concept-with-hacker_23-2150061984.jpg?w=996&t=st=1708432765~exp=1708433365~hmac=148160fc35c1745aa45b36f301bcb6c8b0865179a7f6924e752eefa8da786607" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <div class="item" onclick="openModal('project1.jpg')">Project 1   </div>
+            <div class="item" onclick="openModal('project2.jpg')">Project 2</div>
+            <div class="item" onclick="openModal('project3.jpg')">Project 3</div>
+        </div>
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
